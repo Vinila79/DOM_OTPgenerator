@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP generator</title>
+</head>
+<body>
+    <div id="div1">
+        <h2 style="text-align: center;">GENERATE OTP HERE</h2>
+        <button id="OTP">send otp</button>
+        <h1 id="h55" style="text-align: center;">OTP</h1>
+    </div>
+
+    <script>
+        let getdiv = document.getElementById("div1");
+        getdiv.style.border = "2px solid black";
+        getdiv.style.height = "300px";
+        getdiv.style.width = "300px";
+        getdiv.style.backgroundColor = "wheat";
+        getdiv.style.boxShadow="0px 1px 3px  2px black";
+        getdiv.style.borderRadius="10px"
+
+
+        let geth1 = document.getElementById("h55");
+        geth1.style.border = "2px solid black";
+        geth1.style.width = "200px";
+        geth1.style.height = "50px";
+        geth1.style.marginLeft = "50px";
+        geth1.style.color="black";
+        geth1.style.boxShadow="0px 1px 6px 2px black ";
+        geth1.style.textAlign="centre";
+        geth1.style.borderRadius="5px"
+
+
+       let  getbtn = document.getElementById("OTP");
+        getbtn.style.marginTop = "50px";
+        getbtn.style.marginLeft = "100px";
+        getbtn.style.width = "100px";
+        getbtn.style.height = "30px";
+        getbtn.style.textDecoration = "none";
+        getbtn.style.color= "red";
+        getbtn.style.fontSize= "20px";
+        getbtn.style.boxShadow="0px 1px 6px 2px black "
+
+        
+        
+        
+
+
+        getbtn.addEventListener("click", () => {
+            geth1.innerHTML = Math.floor(Math.random() * 5000+1);
+        });
+    </script>
+</body>
+</html>
